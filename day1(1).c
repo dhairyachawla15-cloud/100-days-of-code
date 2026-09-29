@@ -1,13 +1,14 @@
-#include <iostream>
-using namespace std;
+#include <stdio.h>
 
 int main() {
-    double a, b;
+    float a, b, sum;
 
-    cout << "Enter two numbers: ";
-    cin >> a >> b;
+    printf("Enter two numbers: ");
+    scanf("%f %f", &a, &b);
 
-    cout << "Sum = " << a + b << endl;
+    sum = a + b;
+
+    printf("Sum = %.2f\n", sum);
 
     return 0;
 }
